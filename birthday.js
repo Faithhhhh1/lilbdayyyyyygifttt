@@ -784,11 +784,11 @@ function buildFilm(m){
    .to(barBot, { yPercent: 0, duration: 0.6, ease: 'power2.out' }, 1.5);
 
   // --- the kinetic wish ------------------------------------------------------
-  t.to(kEyebrow, { opacity: 1, y: 0, duration: 0.45, ease: 'power3.out' }, 1.54)
-   .to(line1Chars, { yPercent: 0, rotationX: 0, duration: 0.55, ease: 'power3.out', stagger: 0.033 }, 1.68)
-   .to(line2Chars, { yPercent: 0, rotationX: 0, duration: 0.55, ease: 'power3.out', stagger: 0.033 }, 2.06)
-   .to(uline, { drawn: 1, duration: 0.45, ease: 'power2.inOut' }, 2.54)
-   .to(kSub, { opacity: 1, y: 0, duration: 0.45, ease: 'power3.out' }, 2.74);
+  t.to(kEyebrow, { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }, 1.54)
+   .to(line1Chars, { yPercent: 0, rotationX: 0, duration: 0.65, ease: 'power3.out', stagger: 0.033 }, 1.68)
+   .to(line2Chars, { yPercent: 0, rotationX: 0, duration: 0.65, ease: 'power3.out', stagger: 0.033 }, 2.06)
+   .to(uline, { drawn: 1, duration: 0.55, ease: 'power2.inOut' }, 2.54)
+   .to(kSub, { opacity: 1, y: 0, duration: 0.55, ease: 'power3.out' }, 2.74);
 
   // --- the handoff bloom -----------------------------------------------------
   t.to(barTop, { yPercent: -100, duration: 0.5, ease: 'power2.in' }, 3.32)

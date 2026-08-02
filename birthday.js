@@ -704,14 +704,20 @@ function shotGeom(){
 let filmTL = null;
 function buildFilm(m){
   const t = gsap.timeline({
-    paused: true,
-    onComplete: () => {
-      gsap.set(field, { autoAlpha: 0 });
-      treeStart();
-      // fade promptly so the growing tree is revealed with no white hold
-      gsap.to(bloom, { autoAlpha: 0, duration: 1.15, ease: 'power2.out' });
-    },
-  });
+  paused: true,
+  onComplete: () => {
+    console.log("TIMELINE FINISHED");
+    debugger;
+
+    gsap.set(field, { autoAlpha: 0 });
+    treeStart();
+    gsap.to(bloom, {
+      autoAlpha: 0,
+      duration: 1.15,
+      ease: "power2.out"
+    });
+  },
+});
 
   // reset (t=0)
   t.set(target, { y: 0, scaleX: 1, scaleY: 1, opacity: 1 })

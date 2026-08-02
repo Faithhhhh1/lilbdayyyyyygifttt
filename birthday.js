@@ -706,9 +706,6 @@ function buildFilm(m){
   const t = gsap.timeline({
   paused: true,
   onComplete: () => {
-    console.log("TIMELINE FINISHED");
-    debugger;
-
     gsap.set(field, { autoAlpha: 0 });
     treeStart();
     gsap.to(bloom, {
